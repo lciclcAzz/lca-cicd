@@ -5,7 +5,7 @@
     <artifactId>lcacicd</artifactId>
     <version>1.0</version>
     <description>CICD</description>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -48,4 +48,18 @@
             </plugin>   
         </plugins>
     </build>
+    <dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.linecorp.bot -->
+		<dependency>
+			<groupId>com.linecorp.bot</groupId>
+			<artifactId>line-bot-servlet</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+    </dependencies>
 </project>
